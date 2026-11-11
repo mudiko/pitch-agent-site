@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy policy &mdash; Pitch Agent 27</title>
-<meta name="description" content="Privacy policy for the Pitch Agent 27 mobile game. Offline game, saves on device, optional anonymous analytics you can switch off.">
+<meta name="description" content="Privacy policy for the Pitch Agent 27 mobile game. Saves on device, anonymous statistics and error reports you can switch off, and Write to us messages.">
 <meta name="theme-color" content="#0e1013">
 <style>
   :root {
@@ -72,56 +72,107 @@
   <header>
     <h1>Privacy policy</h1>
   </header>
-  <p class="meta">Pitch Agent 27 for iOS and Android &middot; Effective date: 28 October 2026<br>
+  <p class="meta">Pitch Agent 27 for iOS and Android &middot; Last updated 11 November 2026 (anonymous statistics, error reports and &ldquo;Write to us&rdquo; from version 1.1.1)<br>
   Publisher: Vibalyze O&Uuml;, J&auml;rvevana tee 9, 11314 Tallinn, Estonia (registry code 17240903) &middot; Contact: <a href="mailto:vibalyze@zohomail.eu">vibalyze@zohomail.eu</a></p>
 
   <div class="lede">
-    <p>Pitch Agent 27 is an offline game. We built it to collect as little as
-    possible. Here is exactly what happens with data.</p>
+    <p><strong>The game collects no personal data.</strong> It has no
+    accounts and no ads, it never asks who you are, and your career is saved
+    on your own phone. From version 1.1.1 it sends a few anonymous usage
+    statistics so we can see which parts of the game work, and you can
+    switch them off in the game&rsquo;s settings. If you write to us from
+    the game, we receive your message.</p>
   </div>
 
   <h2>Who we are</h2>
 
   <p>Pitch Agent 27 is made and published by Vibalyze O&Uuml;, J&auml;rvevana
   tee 9, 11314 Tallinn, Estonia (registry code 17240903). Vibalyze O&Uuml; is
-  the controller for the optional anonymous analytics described below. You can
-  reach us at <a href="mailto:vibalyze@zohomail.eu">vibalyze@zohomail.eu</a>.</p>
+  the controller for the anonymous statistics and the messages described
+  below. You can reach us at
+  <a href="mailto:vibalyze@zohomail.eu">vibalyze@zohomail.eu</a>.</p>
 
-  <h2>What we collect</h2>
+  <h2>What the game sends (version 1.1.1 and later)</h2>
 
-  <p><strong>No personal data.</strong> There are no accounts, no logins, no
-  sign-up. We do not ask for your name, email, phone number, contacts, location,
-  photos or any other personal information.</p>
-
-  <p><strong>Your save games stay on your device.</strong> Your agency, clients,
-  clubs and progress are stored locally on your phone or tablet. We do not upload
-  them to our servers. Your device&rsquo;s own backup (iCloud / Google backup) may
-  include them, depending on your system settings.</p>
-
-  <p><strong>Optional anonymous analytics.</strong> To find bugs and see which
-  parts of the game are fun or confusing, the game can send a few anonymous
-  gameplay events (for example &ldquo;app opened&rdquo;, &ldquo;career
-  started&rdquo; with the chosen country and difficulty, &ldquo;season
-  ended&rdquo;, weeks played) to PostHog, hosted in the European Union.</p>
+  <p><strong>Anonymous usage statistics.</strong> The game sends short
+  gameplay events to our own server, for example &ldquo;career
+  started&rdquo; with the home country and difficulty, &ldquo;player
+  signed&rdquo;, &ldquo;deal accepted on the second try&rdquo;, &ldquo;event
+  answered with option 2&rdquo; or &ldquo;season ended with 6
+  clients&rdquo;. Each event holds numbers and fixed labels chosen by the
+  game, plus the app version, the operating system and its version, your
+  phone&rsquo;s language and time zone offset, and the country of the
+  connection.</p>
 
   <ul>
-    <li>Events are tied only to a random install ID generated on your device. It
-    is not linked to your identity, your Apple/Google account or any advertising
-    ID.</li>
-    <li>We do not collect your name, email or contacts. Like any internet
-    request, the connection to PostHog reveals your IP address; we do not use it
-    to identify you or build a location profile.</li>
-    <li>If you play without an internet connection, nothing is sent.</li>
-    <li>You can switch analytics off at any time in <strong>Settings</strong>
-    inside the game (&ldquo;Share anonymous usage data&rdquo;). When it is off,
-    no analytics events are sent.</li>
+    <li>Events are tied only to a random install ID made on your phone (and a
+    random ID per session). It is not your name, not your Apple or Google
+    account, not a device identifier and not the advertising identifier. A
+    new random ID replaces it after 13 months.</li>
+    <li>Your agent&rsquo;s and agency&rsquo;s names, and anything else you
+    type, are never part of an event. Nor are the names of players or
+    clubs.</li>
+    <li>The server derives the country from the connection; it never stores
+    or logs your IP address.</li>
+    <li>Raw events are deleted after 120 days. Daily totals that hold no IDs
+    are kept for 25 months.</li>
+    <li>Offline, events wait on the phone (at most 1,000) and are sent later.
+    The game works fully without a connection.</li>
+    <li><strong>Turn it off</strong> any time: in the game, open Settings
+    and switch off &ldquo;Share anonymous stats&rdquo;. Off deletes the
+    events still waiting and nothing more is sent. If you had switched
+    analytics off in an earlier version, it stays off.</li>
   </ul>
 
-  <h2>Advertising</h2>
+  <p><strong>Anonymous error reports.</strong> If the game hits a software
+  error, it sends an &ldquo;error&rdquo; event with the kind of error, a
+  short fingerprint, and the names of the game&rsquo;s own code files and
+  lines where it happened, so we can find and fix the bug. The error&rsquo;s
+  message is never sent (it could contain something you typed), and nor is
+  anything else from your phone. These reports go through the same anonymous
+  statistics, with the same install ID, retention and off switch.</p>
 
-  <p>There are no ads in Pitch Agent 27 at launch, and no advertising SDKs are
-  included. If that ever changes, we will update this policy and tell you in the
-  game before it applies.</p>
+  <p><strong>Where the install came from (iPhone only).</strong> On first
+  launch the game asks Apple&rsquo;s AdServices framework for a token and
+  sends it to our server once, so we can learn whether the install came from
+  an Apple Search Ads campaign (campaign, ad group and keyword, the country
+  and the date). This is Apple&rsquo;s privacy-preserving attribution: it
+  contains no advertising identifier and nothing about you, it is not
+  tracking, and the game shows no tracking prompt. If statistics are off,
+  nothing is sent.</p>
+
+  <p><strong>&ldquo;Write to us&rdquo;.</strong> If you send us a message from
+  the game&rsquo;s settings, we receive the message, its type (bug, idea or
+  other), the app and system details above, the install ID (so we can match
+  a bug to what happened), and your email address only if you choose to give
+  one so we can reply. Messages are kept for 24 months. This works even when
+  statistics are off, because you send it on purpose.</p>
+
+  <p>Our server runs on Cloudflare, with the database in the European Union.
+  Cloudflare processes the data for us as a service provider. Versions 1.0
+  to 1.1.0 sent nothing at all.</p>
+
+  <h2>What we never collect</h2>
+
+  <p>No name, no contacts, no location, no photos, no microphone, no camera,
+  no advertising identifier and no device identifier. The game contains no
+  advertising libraries, no third-party analytics or crash reporting service
+  and no social or sign-in integrations.</p>
+
+  <h2>What the app stores on your device</h2>
+
+  <p>Your agency, clients, clubs and progress are stored locally on your
+  phone or tablet. We do not upload them to our servers. Your device&rsquo;s
+  own backup (iCloud / Google backup) may include them, depending on your
+  system settings. Small files in the app&rsquo;s support folder hold the
+  random install ID, your statistics setting and events waiting to be
+  sent.</p>
+
+  <h2>Advertising and purchases</h2>
+
+  <p>There are no ads and no in-app purchases in Pitch Agent 27, and no
+  advertising SDKs are included. If that ever changes, we will update this
+  policy and tell you in the game before it applies.</p>
 
   <h2>What we do not do</h2>
 
@@ -134,24 +185,26 @@
   <h2>Children</h2>
 
   <p>The game is not directed at children under 13 (or the minimum age in your
-  country) and we do not knowingly collect personal data from anyone. Because the
-  game collects no personal data, there is nothing that identifies a child.</p>
+  country) and we do not knowingly collect personal data from anyone. The
+  statistics hold nothing that identifies a person.</p>
 
   <h2>Deleting your data</h2>
 
   <ul>
-    <li>Save games: delete them in the game, or uninstall the app / clear the app
-    data.</li>
-    <li>Analytics: turn analytics off in Settings. Uninstalling resets the random
-    install ID. If you want your analytics events deleted, email us and we will
-    help you identify and remove them.</li>
+    <li>Save games: delete them in the game, or uninstall the app / clear the
+    app data.</li>
+    <li>Deleting the app deletes your save, the install ID and any events
+    still waiting on the phone.</li>
+    <li>Turning statistics off stops all sending at once.</li>
+    <li>To have the statistics and messages from your install deleted from our
+    server, email us. We will help you find your install and erase it.</li>
   </ul>
 
   <h2>Your rights</h2>
 
   <p>If you are in the EU/EEA or UK, you have rights under the GDPR (access,
   deletion, objection, complaint to a supervisory authority). Since we hold no
-  personal data, there is usually nothing to hand over, but feel free to ask:
+  personal data, there is usually little to hand over, but feel free to ask:
   <a href="mailto:vibalyze@zohomail.eu">vibalyze@zohomail.eu</a>.</p>
 
   <h2>Changes</h2>
